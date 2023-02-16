@@ -17,6 +17,6 @@ public class Coding_challenge1 {
         scanner.close();
         float bmi = w/(h*h);
 
-        System.out.println("BMI = "+bmi);
+        System.out.println("BMI = " +bmi);
     }
 }
