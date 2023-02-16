@@ -13,10 +13,13 @@ public class compare {
 
         scanner.close();
 
-        if (num1 == num2 ) {
-            System.out.println("Both Are Equal");
+        if (num1 > num2 ) {
+            System.out.println("First Number is Greater Then Second");
+        }
+        else if (num1<num2) {
+            System.out.println("First Number Is Smaller Then Second ");
         } else {
-            System.out.println("Not Equal");
+            System.out.println("Both are Equal");
         }
         
     }
