@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Prime {
-    public static void main() {
+    public static void main(String[] args) {
         
         System.out.println("Enter Range Of A Number ");
         Scanner scanner = new Scanner(System.in);
@@ -20,7 +20,7 @@ public class Prime {
                 }
             }
             if (count ==2) {
-                Primenumber = Primenumber + i +"" ; 
+                Primenumber += i  ; 
             }
             
         }
