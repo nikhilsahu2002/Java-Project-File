@@ -1,29 +1,25 @@
-import java.util.Scanner;
+// import java.util.Scanner;
 
 public class Prime {
     public static void main(String[] args) {
         
-        System.out.println("Enter Range Of A Number ");
-        Scanner scanner = new Scanner(System.in);
-        int j = scanner.nextInt();
-        scanner.close();
-
-        int count =0 ;
-        String Primenumber ="";
-
-        for (int i = 1; i <=j; i++) {
-            for ( j = i; j >=1 ; j--) {
-                
-                if (i%j==0) {
-                    
-                    count ++;
-                }
-            }
-            if (count ==2) {
-                Primenumber += i  ; 
-            }
+        int [] arr = {5,2,6,4,9,3};
+        int v=56,count=1;
+        int flag=0;
+        for (int i = 0; i < arr.length; i++) {
             
+            if (arr[i]!=v && flag==0) {
+                count++;
+                // flag=0;   
+            }
+            if (arr[i]==v) {
+                break;
+            }
+
         }
-        System.out.println("Prime Number :" + Primenumber);
+            
+        System.out.println(count);
+        
+        // System.out.println("Prime Number :" + Primenumber);
     }
 }
