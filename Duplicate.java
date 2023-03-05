@@ -9,7 +9,7 @@ public class Duplicate {
                     count++;
                 }
             }
-            // System.out.println(count);
+             System.out.println(count);
         }
     }
 }
