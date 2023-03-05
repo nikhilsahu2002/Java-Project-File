@@ -1,8 +1,8 @@
 public class student {
-    String name;
-    int age;
-    String Colour;
-    char sex;
+    private String name;
+    private int age;
+    private String Colour;
+    private String sex;
 
     public void  getSex() {
         System.out.println("M");
@@ -15,13 +15,46 @@ public class student {
     }
 
     // constructer 
-    public student(String name, int age ,String Colour,char sex) {
+    public student(String name, int age ,String Colour,String m) {
         this.name= name;
         this.Colour= Colour;
         this.age =age;
-        this.sex=sex;
+        this.sex=m;
     }
 
     public student() {
     }
+
+    // getter and setter 
+    // here will go all get function
+    public String getName(){
+        return name;
+    }
+
+    public String getColour(){
+        return Colour;
+    }
+
+    public String getsex(){
+        return sex;
+    }
+
+    public int getAge(){
+        return age;
+    }
+
+    //here will go Setter 
+
+    public void setName(String newName){
+        this.name = newName;
+    }
+
+    public void setColour(String newColour){
+        this.Colour = newColour;
+    }
+
+    public void setAge(int newAge){
+        this.age = newAge;
+    }
+
 }
