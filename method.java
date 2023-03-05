@@ -1,4 +1,4 @@
-import org.jetbrains.annotations.Contract;
+// import org.jetbrains.annotations.Contract;
 
 public class method {
     public static void main(String[] args){
@@ -19,7 +19,7 @@ public class method {
         int result = x +y;
             return result;
     }
-    @Contract(pure = true)
+    // @Contract(pure = true)
     public static int arr(int [] a){
         int j=0;
         for (int i = 0; i <a.length ; i++) {
