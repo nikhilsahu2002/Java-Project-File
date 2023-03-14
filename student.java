@@ -3,6 +3,7 @@ public class student {
     private int age;
     private String Colour;
     private String sex;
+    private static int id =0;
 
     public void  getSex() {
         System.out.println("M");
@@ -20,9 +21,11 @@ public class student {
         this.Colour= Colour;
         this.age =age;
         this.sex=m;
+        id++;
     }
 
     public student() {
+        id++;
     }
 
     // getter and setter 
@@ -43,6 +46,10 @@ public class student {
         return age;
     }
 
+    public int getId(){
+        return id;
+    }
+
     //here will go Setter 
 
     public void setName(String newName){
@@ -55,6 +62,10 @@ public class student {
 
     public void setAge(int newAge){
         this.age = newAge;
+    }
+
+    public void setId(int newid){
+        id =newid;
     }
 
 }

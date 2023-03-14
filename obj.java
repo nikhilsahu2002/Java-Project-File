@@ -1,5 +1,8 @@
 public class obj {
     public static void main(String[] args){
+        // This Method only work with public class 
+
+
         //created a default Empty Constructer
         // student student1 =new student();
         // System.out.println("Name Of Stundent 1 "+ student1.name);
