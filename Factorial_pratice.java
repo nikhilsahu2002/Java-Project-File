@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class Factorial {
     int n;
  
@@ -31,12 +33,17 @@ class Fibonacci extends Factorial {
 
 class Factorial_practice {
     public static void main(String[] args) {
-        Fibonacci f = new Fibonacci(5);
-        int result = f.factorial(5);
+
+        Scanner scan = new Scanner(System.in);
+        int k=scan.nextInt();
+        scan.close();
+    
+        Fibonacci f = new Fibonacci(k);
+        int result = f.factorial(k);
         System.out.println(result);
-        Fibonacci j = new Fibonacci(10);
-        for (int i = 0; i <= 10; i++) {
-            System.out.print(j.fibonacci(i) + " ");
+
+        for (int i = 0; i <= k; i++) {
+            System.out.print(f.fibonacci(i) + " ");
     }
 }
 }
