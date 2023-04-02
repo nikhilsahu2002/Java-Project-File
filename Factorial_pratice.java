@@ -1,39 +1,42 @@
-/**
- * Factorial_pratice
- */
-
-class fact {
+class Factorial {
     int n;
-    fact(int num){
-        n=num;
+ 
+    Factorial(int num) {
+        n = num;
     }
-    int Fact(int n){
+    
+    int factorial(int n){
         if (n==0) {
             return 1;
         }
-        return n*Fact(n-1);
+        return n * factorial(n-1);
     }
 }
 
-class feb extends fact{
-    feb(int num) {
+class Fibonacci extends Factorial {
+    Fibonacci(int num) {
         super(num);
     }
-    int Feb(int num){
-        if (num==0) {
+    
+    int fibonacci(int num){
+        if (num == 0) {
             return 0;
         }
-        else if (num==1){
+        else if (num == 1){
             return 1;
         }
-        return Feb(num-2) + Feb(num-1);
+        return fibonacci(num-2) + fibonacci(num-1);
     }
 }
-class Factorial_pratice {
+
+class Factorial_practice {
     public static void main(String[] args) {
-        feb f = new feb(5);
-        f.Fact(5);
-        
+        Fibonacci f = new Fibonacci(5);
+        int result = f.factorial(5);
+        System.out.println(result);
+        Fibonacci j = new Fibonacci(10);
+        for (int i = 0; i <= 10; i++) {
+            System.out.print(j.fibonacci(i) + " ");
     }
-    
+}
 }
