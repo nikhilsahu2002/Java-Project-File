@@ -1,5 +1,7 @@
+import java.lang.Math;
+
 public class heapsort {
-    public void sort(int arr[]){
+    public static void sort(int arr[]){
         int n = arr.length;
         for (int i = n/2-1; i >=0; i--) {
             heapify(arr, n,i);
@@ -11,7 +13,7 @@ public class heapsort {
             heapify(arr, i, 0);
         }
     }
-     void heapify(int arr[],int n,int i){
+    static void heapify(int arr[],int n,int i){
         int largest = i;
         int l = 2 *i + 1 ;
         int r = 2*i + 2;
@@ -32,11 +34,13 @@ public class heapsort {
 
     public static void main(String[] args) {
         int [] arr= {2,5,9,6,0};
-        heapsort obj = new heapsort();
-        obj.sort(arr);
+        int n = arr.length;
+        heapsort.sort(arr);
         
         for (int i = 0; i < arr.length; i++) {
                 System.out.println(arr[i]);
         }
+        int height = (int) Math.log(n) + 1;
+        System.out.println(" height will be =" + height);
     }
 }
