@@ -1,5 +1,3 @@
-
-
 public class circle {
     point center ;
     double radius;
