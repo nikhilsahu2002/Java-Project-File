@@ -10,8 +10,8 @@ class Animal {
     }
 }
 
-class Dog extends Animal {
-    public Dog(String name) {
+class Dog1 extends Animal {
+    public Dog1(String name) {
         super(name);
     }
 
@@ -38,7 +38,7 @@ public class multi {
         Animal a = new Animal("Animal");
         a.speak();
 
-        Dog d = new Dog("Fido");
+        Dog1 d = new Dog1("Fido");
         d.speak();
 
         Cat c = new Cat("Whiskers");
