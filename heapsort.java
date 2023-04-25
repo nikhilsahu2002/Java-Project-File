@@ -17,10 +17,10 @@ public class heapsort {
         int largest = i;
         int l = 2 *i + 1 ;
         int r = 2*i + 2;
-        if (l<n && arr[l]>arr[largest]) {
+        if (l<n && arr[l]<arr[largest]) {
             largest =l;
         }
-        if (r<n && arr[r]>arr[largest]) {
+        if (r<n && arr[r]<arr[largest]) {
             largest =r;
         }
 
@@ -39,6 +39,15 @@ public class heapsort {
         return max_element;
     }
 
+    static void interchange(int arr[] ,int i, int n){
+        for (int j = 0; j < arr.length; j++) {
+            if (arr[j]==i) {
+                arr[j]=n;
+            }
+            heapify(arr, n, 0);
+        }
+        
+    }
 
     public static void main(String[] args) {
         int [] arr= {2,5,9,6,0};
@@ -46,11 +55,16 @@ public class heapsort {
         heapsort.sort(arr);
         
         for (int i = 0; i < arr.length; i++) {
-                System.out.println(arr[i]);
+            System.out.println(arr[i]);
         }
         int height = (int) Math.log(n) + 1;
         System.out.println("height will be =" + height);
+        System.out.println("\n");
         int k =deleteRoot(arr, n);
         System.out.println(k);
+        
+    //     interchange(arr, 5, 25);
+    //     heapsort.sort(arr);
+
     }
 }
