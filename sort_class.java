@@ -15,9 +15,9 @@ public class sort_class {
                 }
             }
         }
-        System.out.println("\n");
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i]);
-        }
+        // System.out.println("\n");
+        // for (int i = 0; i < arr.length; i++) {
+        //     System.out.println(arr[i]);
+        // }
     }
 }
