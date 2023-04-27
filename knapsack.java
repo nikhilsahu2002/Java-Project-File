@@ -11,26 +11,26 @@ public class knapsack {
           p_w[i] = profit[i]/weight[i];
         }
 
-        // bubble sort
-        for (int i = 0; i < p_w.length - 1; i++) {
-            for (int j = 0; j < p_w.length - i - 1; j++) {
-                if (p_w[j] < p_w[j + 1]) {
-                    double temp = p_w[j];
-                    p_w[j] = p_w[j + 1];
-                    p_w[j + 1] = temp;
+        // Heap Sort
+        for (int i = p_w.length / 2 - 1; i >= 0; i--)
+            heapify(p_w, weight, profit, p_w.length, i);
 
-                    temp = weight[j];
-                    weight[j] = weight[j + 1];
-                    weight[j + 1] = temp;
+        for (int i = p_w.length - 1; i > 0; i--) {
+            double temp = p_w[0];
+            p_w[0] = p_w[i];
+            p_w[i] = temp;
 
-                    temp = profit[j];
-                    profit[j] = profit[j + 1];
-                    profit[j + 1] = temp;
-                }
-            }
+            temp = weight[0];
+            weight[0] = weight[i];
+            weight[i] = temp;
+
+            temp = profit[0];
+            profit[0] = profit[i];
+            profit[i] = temp;
+
+            heapify(p_w, weight, profit, i, 0);
         }
 
-        
         // for (double i : p_w) {
         //     System.out.println(i);
         // }
@@ -46,5 +46,33 @@ public class knapsack {
             }
         }
         System.out.println(p);
+    }
+
+    static void heapify(double arr[], double weight[], double profit[], int n, int i) {
+        int largest = i; 
+        int l = 2 * i + 1; 
+        int r = 2 * i + 2; 
+
+        if (l < n && arr[l] < arr[largest])
+            largest = l;
+
+        if (r < n && arr[r] < arr[largest])
+            largest = r;
+
+        if (largest != i) {
+            double swap = arr[i];
+            arr[i] = arr[largest];
+            arr[largest] = swap;
+
+            swap = weight[i];
+            weight[i] = weight[largest];
+            weight[largest] = swap;
+
+            swap = profit[i];
+            profit[i] = profit[largest];
+            profit[largest] = swap;
+
+            heapify(arr, weight, profit, n, largest);
+        }
     }
 }
