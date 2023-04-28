@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class techTraining {
 public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
-    int []  arr = new int[10];
+    double []  arr = new double[10];
     int k=0;
-    int []  arr3 = new int[10];
+    double []  arr3 = new double[10];
     for (int i = 0; i < 10; i++) {
         arr[i] = scan.nextInt();
     }
@@ -19,7 +19,7 @@ public static void main(String[] args) {
             k++;
         }
     }
-    for (int i : arr3) {
+    for (double i : arr3) {
         System.out.println(i);
     }
 }    

@@ -17,6 +17,8 @@ public class BUBBLE_Sort {
     public static void main(String[] args) {
         double[] arr={5,3,9,4,2};  
         Bubble(arr);
-
+        for (double d : arr) {
+            System.out.println(d);
+        }
     }
 }
