@@ -8,7 +8,6 @@ public class selection {
                 if (arr[j] < arr[min]) {
                      min =j;
                 }
-
                 int temp = arr[min];
                 arr[min] = arr[i];
                 arr[i] = temp;

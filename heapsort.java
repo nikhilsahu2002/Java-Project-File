@@ -60,7 +60,7 @@ public class heapsort {
         int height = (int) Math.log(n) + 1;
         System.out.println("height will be =" + height);
         System.out.println("\n");
-        int k =deleteRoot(arr, n);
+        int k =deleteRoot(arr, 1);
         System.out.println(k);
         
     //     interchange(arr, 5, 25);
