@@ -8,7 +8,7 @@ class FirstThread implements Runnable{
         try {
             for (int i = 1; i < 5; i++) {
                 System.out.println("Thread 1 : " + i + ":");
-                Thread.sleep(600);
+                Thread.sleep(600);   
             }
         } catch (InterruptedException e) {
             System.out.println("Exist Due To Intrupte ");
