@@ -1,5 +1,4 @@
 public class knapSack0_1 {
-    
     public static void main(String[] args) {
         int[] values = { 10,12,28 };
         int[] weights = { 1, 2, 4 };
