@@ -10,7 +10,7 @@ interface SubTract {
 public class Multiple_inharetance_Example implements add ,SubTract {
     @Override
         public int Add(int a,int b) {
-            return a-b;
+            return a+b;
         }
         public int  sub(int a,int b) {
             return a-b;
