@@ -1,3 +1,8 @@
+@interface overloading {
+
+}
+
+
 public class point {
     int x;
     int y;
@@ -22,6 +27,8 @@ public class point {
     public void setY(int y) {
         this.y = y;
     }
+
+
 
     @overloading
     public String toSting(){

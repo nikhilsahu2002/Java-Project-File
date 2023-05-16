@@ -7,6 +7,6 @@ public class compare_ArrayList {
             List.add(15);
             List.add(20);
 
-            System.out.println(List.get(1).compareTo(List.get(1)));
+            System.out.println(List.get(1).compareTo(List.get(2)));
     }
 }
