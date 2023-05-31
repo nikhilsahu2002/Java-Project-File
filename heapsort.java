@@ -1,5 +1,3 @@
-import java.lang.Math;
-
 public class heapsort {
     public static void sort(int arr[]){
         int n = arr.length;
@@ -51,20 +49,11 @@ public class heapsort {
 
     public static void main(String[] args) {
         int [] arr= {2,5,9,6,0};
-        int n = arr.length;
         heapsort.sort(arr);
         
         for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);
         }
-        int height = (int) Math.log(n) + 1;
-        System.out.println("height will be =" + height);
-        System.out.println("\n");
-        int k =deleteRoot(arr, 1);
-        System.out.println(k);
         
-    //     interchange(arr, 5, 25);
-    //     heapsort.sort(arr);
-
     }
 }
