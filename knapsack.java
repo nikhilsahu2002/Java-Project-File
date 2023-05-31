@@ -30,6 +30,7 @@ public class knapsack {
 
             heapify(p_w, weight, profit, i, 0);
         }
+        
 
         // for (double i : p_w) {
         //     System.out.println(i);

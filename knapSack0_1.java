@@ -17,6 +17,7 @@ public class knapSack0_1 {
             }
         }
 
+        
         System.out.println("Maximum value: " + maxValues[n][capacity]);
     }
 }

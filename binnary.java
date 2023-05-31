@@ -22,7 +22,7 @@ public class binnary {
 	{
 		binnary ob = new binnary();
 		int arr[] = { 2, 3, 4, 10, 40 };
-		int x = 10;
+		int x = 5;
 		int result = ob.binarySearch(arr, x);
 		if (result == -1)
 			System.out.println(
