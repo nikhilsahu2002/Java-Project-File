@@ -29,10 +29,11 @@ public class FCFS_Scheduling {
     public static void main(String[] args) {
         // Create a list of processes
         List<Process> processes = new ArrayList<>();
-        processes.add(new Process("P1", 0, 8));
-        processes.add(new Process("P2", 1, 4));
-        processes.add(new Process("P3", 2, 2));
-        processes.add(new Process("P4", 3, 6));
+        processes.add(new Process("P1", 3, 4));
+        processes.add(new Process("P2", 5, 3));
+        processes.add(new Process("P3", 0, 2));
+        processes.add(new Process("P4", 5, 1));
+        processes.add(new Process("P5", 4, 3));
 
         // Sort the processes based on arrival time (if necessary)
         processes.sort((p1, p2) -> p1.getArrivalTime() - p2.getArrivalTime());
