@@ -1,10 +1,10 @@
 public class knapsack {
     public static void main(String[] args) {
-        double [] arr= {1,2,3};
-        double [] profit = {25,15,10};
-        double [] weight = {18,15,10};
-        double [] p_w =new double[3];
-        double m = 20;
+        double [] arr= {1,2,3,4,5};
+        double [] profit = {2,28,25,18,7};
+        double [] weight = {1,4,5,3,3};
+        double [] p_w =new double[5];
+        double m = 15;
         double p=0;
 
         for (int i = 0; i < arr.length; i++) {
